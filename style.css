@@ -58,9 +58,11 @@ body {
     align-items: center;
     cursor: pointer;
 }
+
 .mylearning {
-position: relative;
+    position: relative;
 }
+
 .mylearning__popup {
     right: 0;
     background-color: white;
@@ -70,9 +72,10 @@ position: relative;
     width: 100px;
     top: 150%;
     display: none;
-   
+
 }
-.mylearning:hover .mylearning__popup{
+
+.mylearning:hover .mylearning__popup {
     display: block;
 }
 
@@ -147,26 +150,24 @@ position: relative;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 15px;
-   
+
 
 
 
 }
 
 .course-card {
-    width: 25%;
-    overflow: hidden;
+    flex-basis: 20%;
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
     box-sizing: border-box;
-    padding: 20px;
-   
- 
+    margin: 5px;
 }
 
 .course-card:hover {
     transform: scale(1.2);
 }
+
 .course-card p del {
     margin-left: 10px;
 }
@@ -259,4 +260,47 @@ position: relative;
 .footer-section-two h1:hover {
     color: red;
 
+}
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .course-card {
+        flex-basis: 40%;
+    }
+
+    .navbar__s2,
+    .navbar__s3 {
+        display: none;
+    }
+
+    .categories {
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    .footer-section-logos {
+        display: flex;
+        flex-wrap: wrap;
+          align-items: center;
+    }
+
+    .banner-box {
+        width: 15rem;
+    }
+    
+    
+}
+
+@media screen and (min-width:600px) {
+    .navbar__s4 {
+        display: none;
+    }
+
+  
 }
